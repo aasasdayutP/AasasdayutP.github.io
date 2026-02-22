@@ -377,33 +377,40 @@
           </div>
 
           <!-- Project Card: Freelance -->
-          <div class="glass-card rounded-2xl p-6 reveal delay-100">
+          <div class="glass-card rounded-2xl p-6 reveal delay-100 flex flex-col h-full">
             <h4 class="text-xl font-bold text-white mb-1">Rhinish Travel</h4>
-            <p class="text-sm text-primary mb-4">Freelance Web Developer</p>
-           <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
-                <div class="relative group">
-                    <div class="absolute -inset-1 bg-gradient-to-r from-primary to-secondary rounded-2xl blur opacity-25 group-hover:opacity-50 transition duration-1000 group-hover:duration-200"></div>
-                    <img src="img/rhinish_d.webp" alt="Rhinish Travel Desktop" 
-                        class="relative w-full h-auto aspect-[16/10] object-contain bg-white/5 rounded-2xl border border-white/10 shadow-2xl" />
-                </div>
-
-                <div class="relative group max-w-[280px] mx-auto md:mx-0">
-                    <div class="absolute -inset-1 bg-gradient-to-r from-primary to-secondary rounded-2xl blur opacity-25 group-hover:opacity-50 transition duration-1000 group-hover:duration-200"></div>
-                    <img src="img/rhinish_m.webp" alt="Rhinish Travel Mobile" 
-                        class="relative w-full h-auto aspect-[9/16] object-contain bg-white/5 rounded-2xl border border-white/10 shadow-2xl" />
-                </div>
+            <p class="text-sm text-primary mb-2">Freelance Web Developer</p>
+            
+            <!-- Improved Image Mockup Layout -->
+            <div class="relative w-full aspect-[16/10] mb-6 mt-2 group">
+              <!-- Desktop Image (Background) -->
+              <div class="absolute inset-0 w-[90%] h-full left-0 z-10 transition-transform duration-500 group-hover:-translate-y-1">
+                <div class="absolute -inset-1 bg-gradient-to-r from-primary/20 to-secondary/20 rounded-xl blur opacity-30"></div>
+                <img src="img/rhinish_d.webp" alt="Rhinish Travel Desktop" 
+                     class="w-full h-full object-cover rounded-xl border border-white/10 shadow-xl bg-surface" />
+              </div>
+              
+              <!-- Mobile Image (Foreground Overlap) -->
+              <div class="absolute bottom-[-10%] right-[0%] w-[30%] aspect-[9/18] z-20 transition-transform duration-500 group-hover:translate-y-[-10%] group-hover:scale-105">
+                <div class="absolute -inset-1 bg-primary/20 rounded-2xl blur opacity-40"></div>
+                <img src="img/rhinish_m.webp" alt="Rhinish Travel Mobile" 
+                     class="w-full h-full object-cover rounded-2xl border-2 border-surface shadow-2xl bg-surface" />
+              </div>
             </div>
-            <ul class="text-sm text-gray-400 space-y-2 mb-6 list-disc list-inside">
+
+            <ul class="text-sm text-gray-400 space-y-2 mb-6 list-disc list-inside mt-auto">
               <li>Maintained and updated a legacy web platform using Pure PHP, developing new database functions.</li>
               <li>Resolved technical bugs and enhanced UI components while collaborating with senior developers.</li>
             </ul>
-            <div class="flex flex-wrap gap-2 mt-auto">
+            
+            <div class="flex flex-wrap gap-2">
               <span class="tag">Pure PHP</span>
               <span class="tag">MySQL</span>
               <span class="tag">JavaScript</span>
               <span class="tag">HTML/CSS</span>
             </div>
           </div>
+
 
         </div>
       </div>
